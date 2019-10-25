@@ -21,7 +21,9 @@ Route::group([
     Route::post('signup', 'AuthController@signup');
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
+    Route::post('resetpassword', 'ResetPasswordController@sendEmail');
+    Route::post('changepassword', 'ChangePasswordController@changePassword');
     Route::post('me', 'AuthController@me');
-
+   
 
 });
